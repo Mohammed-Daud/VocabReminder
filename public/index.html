@@ -11,10 +11,9 @@
     <script defer src="/__/firebase/7.4.0/firebase-firestore.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
     <script defer src="/__/firebase/init.js"></script>
+    <link rel="stylesheet" href="app.css">
     <style>
-    body{
-      background: #fff;
-    }
+    
     #question{
       text-transform: uppercase;
     }
@@ -28,6 +27,7 @@
       text-align: center;
       line-height: 30px;
       border: 1px solid #ccc;
+      background: #fff;
     }
     #opt-list li.right{
       background: #34a853;
@@ -59,11 +59,13 @@
     </style>
     
   </head>
-  <body>
-    <h1 id="question"></h1>
-    <ul id="opt-list"></ul>
-    <button onclick="loadContent();">Load More</button>
-    <div id="ans-con">
+  <body class="bg-gray-100 font-sans">
+    <div class="container mx-auto w-64">
+      
+      <h1 class="text-center text-2xl" id="question"></h1>
+      <ul id="opt-list"></ul>
+      <button onclick="loadContent();">Load More</button>
+      <div id="ans-con"></div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
     <script src="./app.js"></script>

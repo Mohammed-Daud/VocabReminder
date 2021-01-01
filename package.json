@@ -1,0 +1,24 @@
+{
+  "name": "vocab",
+  "version": "1.0.0",
+  "description": "Firebase based simple app",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o public/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mohammed-Daud/VocabReminder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mohammed-Daud/VocabReminder/issues"
+  },
+  "homepage": "https://github.com/Mohammed-Daud/VocabReminder#readme",
+  "dependencies": {
+    "autoprefixer": "^10.1.0",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.2"
+  }
+}
