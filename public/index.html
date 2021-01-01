@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Firestore Vocab Reminder</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.4.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.4.0/firebase-firestore.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+    <style>
+    body{
+      background: #fff;
+    }
+    #question{
+      text-transform: uppercase;
+    }
+    ul#opt-list{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    #opt-list li{
+      margin-bottom: 15px;
+      text-align: center;
+      line-height: 30px;
+      border: 1px solid #ccc;
+    }
+    #opt-list li.right{
+      background: #34a853;
+      color: #fff;
+    }
+    #opt-list li.wrong{
+      background: #ea4335;
+      color: #fff;
+    }
+    button{
+      width: 100%;
+      line-height: 30px;
+      background: #039be5;
+      border: none;
+      color: #fff;
+      margin-top: 15px;
+    }
+    #ans-con{
+      background: #f6fcfe;
+      padding: 15px;
+      margin-top: 15px;
+      text-align: center;
+      font-family: arial;
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+    }
+    </style>
+    
+  </head>
+  <body>
+    <h1 id="question"></h1>
+    <ul id="opt-list"></ul>
+    <button onclick="loadContent();">Load More</button>
+    <div id="ans-con">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
