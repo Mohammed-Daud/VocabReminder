@@ -17,11 +17,7 @@
     #question{
       text-transform: uppercase;
     }
-    ul#opt-list{
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
+    
     #opt-list li{
       margin-bottom: 15px;
       text-align: center;
@@ -52,18 +48,15 @@
       text-align: center;
       font-family: arial;
     }
-    ul{
-      list-style: none;
-      padding: 0;
-    }
+    
     </style>
     
   </head>
   <body class="bg-gray-100 font-sans">
-    <div class="container mx-auto w-64">
+    <div class="container mx-auto h-screen bg-gray-700 p-4 pt-4">
       
-      <h1 class="text-center text-2xl" id="question"></h1>
-      <ul id="opt-list"></ul>
+      <h1 class="text-center text-white text-2xl my-4" id="question"></h1>
+      <ul class="list-none" id="opt-list"></ul>
       <button onclick="loadContent();">Load More</button>
       <div id="ans-con"></div>
     </div>
